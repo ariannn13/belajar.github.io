@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+.container {
+  display: grid;
+  width: 60%;
+  border: 5px solid orange;
+  margin: 50px auto;
+  grid-template-columns: 1fr minmax(200px, 300px) 1fr;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even) {
+  background-color: blueviolet;
+}
